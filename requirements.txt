@@ -1,8 +1,8 @@
 streamlit
 insightface
 onnxruntime
-opencv-python
-scikit-learn
 faiss-cpu
+scikit-learn
 numpy
 pandas
+opencv-python-headless
