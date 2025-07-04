@@ -3,5 +3,6 @@ insightface
 onnxruntime
 opencv-python
 scikit-learn
+faiss-cpu
 numpy
 pandas
