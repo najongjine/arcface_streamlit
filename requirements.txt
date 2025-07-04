@@ -5,4 +5,4 @@ faiss-cpu
 scikit-learn
 numpy
 pandas
-opencv-python-headless==4.5.5.62
+opencv-python-headless
