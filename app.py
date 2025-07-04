@@ -50,6 +50,7 @@ if uploaded_file is not None:
             st.error("❌ 얼굴을 감지하지 못했습니다.")
         else:
             emb = embedding.reshape(1, -1).astype("float32")
+            emb /= np.linalg.norm(emb, axis=1, keepdims=True)  # ⭐️ 정규화
             D, I = index.search(emb, k=1)
             best_idx = I[0][0]
             best_score = D[0][0]
