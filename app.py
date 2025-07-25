@@ -37,6 +37,16 @@ def get_face_embedding(image_bytes):
 
 # 🚀 Streamlit UI
 st.title("🧑‍💻 얼굴 유사도 판별 (FAISS)")
+st.image(
+    ["anthony_joshua.png","kang_ho_dong.png",
+     "karina.png","pak_myung_su.png","unganoo.png"],
+    caption=["Anthony Joshua", "강호동", 
+             "카리나", "박명수", "Francis Ngannou"],
+    #use_column_width=True
+    width=300
+)
+
+
 
 uploaded_file = st.file_uploader("얼굴 이미지 업로드", type=["jpg", "jpeg", "png"])
 
